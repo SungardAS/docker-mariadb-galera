@@ -7,5 +7,5 @@ RUN rpm --import https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 RUN yum install -y which MariaDB-Galera-server MariaDB-client galera
 
 VOLUME ["/var/log", "/var/lib/mysql"]
-EXPOSE 3306
+EXPOSE 3306 4567 4568 4444
 ENTRYPOINT ["mysqld"]
