@@ -10,7 +10,7 @@ wsrep_cluster_name=galera_cluster
 binlog_format=ROW
 default_storage_engine=InnoDB
 innodb_autoinc_lock_mode=2
-innodb_locks_unsafe_for_binlog=1
+transaction-isolation=REPEATABLE-READ
 max_connect_errors=1000000
 
 [mysqld_safe]
